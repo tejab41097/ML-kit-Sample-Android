@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 data class ScannedData(
     @PrimaryKey(autoGenerate = true)
     var id: Int,
+    var type: Int,
     var data: String,
     var timeStamp: String,
     var isSynced: Boolean = false

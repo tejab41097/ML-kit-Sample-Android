@@ -16,12 +16,14 @@ class HistoryAdapter : RecyclerView.Adapter<HistoryAdapter.ViewHolder>() {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = list[position]
-
+        holder.itemBinding.tvData.text = item.data
+        holder.itemBinding.tvType.text = item.type.toString()
+        holder.itemBinding.tvIndex.text = item.id.toString()
     }
 
     override fun getItemCount() = list.size
 
-    inner class ViewHolder(itemBinding: ItemHistoryBinding) :
+    inner class ViewHolder(val itemBinding: ItemHistoryBinding) :
         RecyclerView.ViewHolder(itemBinding.root)
 
     fun setData(dataList: MutableList<ScannedData>) {

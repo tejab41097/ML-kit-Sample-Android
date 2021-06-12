@@ -79,4 +79,10 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttp3"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutinesAndroid"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutinesAndroid"
-    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$rootProject.coroutinesAdapter"}
+    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$rootProject.coroutinesAdapter"
+
+    implementation "com.google.mlkit:barcode-scanning:$rootProject.barcodeScanner"
+    implementation "androidx.camera:camera-camera2:$rootProject.camerax"
+    implementation "androidx.camera:camera-lifecycle:$rootProject.camerax"
+    implementation "androidx.camera:camera-view:1.0.0-alpha25"
+}
