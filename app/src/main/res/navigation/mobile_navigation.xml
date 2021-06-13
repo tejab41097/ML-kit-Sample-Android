@@ -17,7 +17,7 @@
         android:label="@string/title_history"
         tools:layout="@layout/fragment_history" />
 
-    <dialog
+    <fragment
         android:id="@+id/navigation_show_barcode_details"
         android:name="com.tejas.mlkitsample.ui.ShowBarcodeDataFragment"
         tools:layout="@layout/fragment_show_barcode_data" />

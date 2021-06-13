@@ -13,6 +13,15 @@ class MainViewModel @Inject constructor(
     private val mainRepository: MainRepository
 ) : ViewModel() {
 
+    private val mutGlobalErrorObserver = MutableLiveData<String?>()
+    val globalErrorObserver: LiveData<String?> get() = mutGlobalErrorObserver
+
+    init {
+        mainRepository.globalErrorObserver.observeForever {
+            mutGlobalErrorObserver.postValue(it)
+        }
+    }
+
     private val latestScannedLiveData = MutableLiveData<ScannedData>()
 
     private fun setScannedData(scannedData: ScannedData) {
@@ -26,7 +35,10 @@ class MainViewModel @Inject constructor(
     fun saveBarcodeData(scannedData: ScannedData) {
         viewModelScope.launch {
             mainRepository.insertData(scannedData)
-            setScannedData(scannedData)
         }
+        setScannedData(scannedData)
     }
+
+    fun syncData() = mainRepository.syncData()
+
 }

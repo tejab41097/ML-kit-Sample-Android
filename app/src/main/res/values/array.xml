@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="barcodes">
+        <item>Unknown</item>
+        <item>Contact</item>
+        <item>Email</item>
+        <item>ISBN</item>
+        <item>Phone</item>
+        <item>Product</item>
+        <item>Sms</item>
+        <item>Text</item>
+        <item>URL</item>
+        <item>Wifi</item>
+        <item>Geo</item>
+        <item>Calendar Event</item>
+        <item>Driver License</item>
+    </string-array>
+</resources>

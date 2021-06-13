@@ -9,7 +9,7 @@ import com.google.mlkit.vision.barcode.BarcodeScanning
 import com.google.mlkit.vision.common.InputImage
 
 
-class MyImageAnalyzer : ImageAnalysis.Analyzer {
+class ImageAnalyzer : ImageAnalysis.Analyzer {
 
     lateinit var callback: Callback
 

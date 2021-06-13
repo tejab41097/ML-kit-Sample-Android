@@ -3,6 +3,24 @@
     <string name="title_scanner">Scanner</string>
     <string name="title_history">History</string>
     <string name="no_history_found">No History Found</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="qr_code_reader_android_using_ml_kit">QR Code Reader Android Using ML Kit</string>
+    <string name="data_synced">Data Sync Successful</string>
+    <string name="synced_with_server">Barcode is Synced With Server</string>
+    <string name="not_synced_with_server">Not Synced With Server Yet</string>
+    <string name="barcode_type">Barcode Type: </string>
+    <string name="type">Type: %s</string>
+    <string name="type2">Type:</string>
+    <string name="name">Name:</string>
+    <string name="email">email</string>
+    <string name="name_number">Name/No:</string>
+    <string name="number">Number:</string>
+    <string name="text">Text:</string>
+    <string name="title">Title:</string>
+    <string name="ssid">SSID:</string>
+    <string name="latitude">Latitude:</string>
+    <string name="full_mail">Full Mail:</string>
+    <string name="message">Message:</string>
+    <string name="url">URL:</string>
+    <string name="password">Password:</string>
+    <string name="longitude">Longitude:</string>
 </resources>
